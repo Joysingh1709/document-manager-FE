@@ -1,3 +1,22 @@
-a{
+a {
     text-decoration: none;
+    border-color: black;
+}
+
+.folder-icon {
+    /* width: 180px !important;
+    height: 180px !important; */
+    color: white;
+}
+
+.git-icon {
+    color: white;
+}
+
+.facebook-icon {
+    color: white;
+}
+
+.linkedin-icon {
+    color: white;
 }

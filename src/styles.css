@@ -14,11 +14,9 @@ body {
     color: aqua;
 }
 
-a{
+a {
     text-decoration: none;
 }
-
-
 
 
 /* css for footer */
@@ -26,6 +24,7 @@ a{
 .footer-07 {
     background: #121212;
 }
+
 .footer-07 a {
     color: #a3de83;
 }
@@ -58,8 +57,8 @@ a{
 
 .footer-07 .ftco-footer-social li a {
     background: transparent;
-    border: 1px solid #a3de83;
 }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -99,6 +98,7 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
+
 .navbar>.container,
 .navbar>.container-fluid {
     display: -webkit-box;
@@ -113,6 +113,7 @@ a{
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
 @media (max-width: 575.98px) {
     .navbar-expand-sm>.container,
     .navbar-expand-sm>.container-fluid {
@@ -120,6 +121,7 @@ a{
         padding-left: 0;
     }
 }
+
 @media (min-width: 576px) {
     .navbar-expand-sm>.container,
     .navbar-expand-sm>.container-fluid {
@@ -135,8 +137,8 @@ a{
         padding-left: 0;
     }
 }
+
 @media (min-width: 768px) {
-    
     .navbar-expand-md>.container,
     .navbar-expand-md>.container-fluid {
         -ms-flex-wrap: nowrap;
@@ -153,7 +155,6 @@ a{
 }
 
 @media (min-width: 992px) {
-    
     .navbar-expand-lg>.container,
     .navbar-expand-lg>.container-fluid {
         -ms-flex-wrap: nowrap;
@@ -170,23 +171,25 @@ a{
 }
 
 @media (min-width: 1200px) {
-    
     .navbar-expand-xl>.container,
     .navbar-expand-xl>.container-fluid {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 }
+
 .navbar-expand>.container,
 .navbar-expand>.container-fluid {
     padding-right: 0;
     padding-left: 0;
 }
+
 .navbar-expand>.container,
 .navbar-expand>.container-fluid {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
+
 @media print {
     *,
     *::before,
@@ -266,6 +269,7 @@ a{
         border-color: #dee2e6;
     }
 }
+
 .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -275,14 +279,17 @@ a{
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .justify-content-center {
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
 }
+
 .text-center {
     text-align: center !important;
 }
+
 .ftco-footer-social li {
     list-style: none;
     margin: 0 10px 0 0;
@@ -311,7 +318,6 @@ a{
 .ftco-footer-social li a:hover {
     color: #fff;
 }
-
 
 footer {
     padding: 7em 0;
