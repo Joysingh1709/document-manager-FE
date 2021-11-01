@@ -15,15 +15,6 @@ export class ManagerComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'folder2-svg',
       sanitizer.bypassSecurityTrustResourceUrl('assets/svg/folder.svg'));
-
-    iconRegistry.addSvgIcon(
-      'insta',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/svg/instagram-brands.svg'));
-
-    iconRegistry.addSvgIcon(
-      'git',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/svg/github-brands.svg'));
-
   }
 
   ngOnInit(): void {
