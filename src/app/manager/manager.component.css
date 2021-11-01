@@ -1,10 +1,28 @@
 .folder-icon{
     width: 180px !important;
-    height: 180px !important;
+    height: 160px !important;
 }
 
 .git-icon{
     width: 180px !important;
     height: 180px !important;
     color: pink;
+}
+
+.add-doc{
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+}
+
+.border{
+    border-radius: 20px;
+    border: 2px dashed rgba(0, 0, 0, 0.171) !important;
+    width: 100%;
+    height: 100%;
+}
+
+
+.d-item{
+    max-width: 180px;
 }
