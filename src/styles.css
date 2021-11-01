@@ -50,6 +50,10 @@ a {
 
 .footer-07 .menu {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer-07 .menu a {

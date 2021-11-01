@@ -26,3 +26,24 @@
 .d-item{
     max-width: 180px;
 }
+
+@media (max-width: 768px) {
+    .d-item {
+        max-width: 100px;
+    }
+    .folder-icon{
+        width: 88px !important;
+        height: 68px !important;
+    }
+    .add-doc{
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+    }
+    .border{
+        border-radius: 10px;
+        border: 2px dashed rgba(0, 0, 0, 0.171) !important;
+        width: 100%;
+        height: 100%;
+    }
+}
