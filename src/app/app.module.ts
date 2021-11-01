@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ManagerComponent } from './manager/manager.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    ManagerComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatButtonModule,
     MatExpansionModule,
+    FontAwesomeModule,
     HttpClientModule
   ],
   providers: [],
