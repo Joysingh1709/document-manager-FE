@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "documentManager:build:production",
+            "firebaseProject": "document-manager-73275",
+            "firebaseHostingSite": "document-manager-73275"
+          }
         }
       }
     }
