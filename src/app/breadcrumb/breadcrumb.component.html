@@ -1,0 +1,13 @@
+<!-- bootsrat breadcrumb -->
+<nav aria-label="breadcrumb d-flex">
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item" *ngFor="let d of dirFlowArr" [ngClass]="{'active': d === currentDirectory}"
+            aria-current="page">
+            <a *ngIf="d !== currentDirectory" href="#">{{d}}</a>
+            {{d === currentDirectory ? d : ""}}
+        </li>
+    </ol>
+</nav>
