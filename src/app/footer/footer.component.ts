@@ -11,9 +11,14 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class FooterComponent implements OnInit {
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon(
-      'folder2-svg',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/svg/folder.svg'));
+  
+      iconRegistry.addSvgIcon(
+        'insta',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/svg/instagram-brands.svg'));
+
+      iconRegistry.addSvgIcon(
+        'git',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/svg/github-brands.svg'));
 
       iconRegistry.addSvgIcon(
         'facebook',
