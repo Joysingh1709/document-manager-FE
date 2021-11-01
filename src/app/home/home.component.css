@@ -1,0 +1,9 @@
+.page{
+    width: auto;
+    margin: 20px 40px;
+    min-height: 80vh;
+}
+
+.top-bar{
+    padding: 14px;
+}

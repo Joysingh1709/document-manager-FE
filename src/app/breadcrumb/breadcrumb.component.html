@@ -1,0 +1,18 @@
+<!-- bootsrat breadcrumb -->
+<div class="breadcrumb flex-row align-items-center justify-content-between">
+    <div class="d-inline-flex align-items-center">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+        <ol class="breadcrumb align-items-center m-0">
+            <li class="breadcrumb-item" *ngFor="let d of dirFlowArr" [ngClass]="{'active': d === currentDirectory}"
+                aria-current="page">
+                <a *ngIf="d !== currentDirectory" href="#">{{d}}</a>
+                {{d === currentDirectory ? d : ""}}
+            </li>
+        </ol>
+    </div>
+    <ol class="breadcrumb align-items-center m-0">
+        <li class="breadcrumb-item active" aria-current="page">{{currentDirectory}}</li>
+    </ol>
+</div>
