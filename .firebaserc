@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "document-manager-73275": {
+      "hosting": {
+        "documentManager": [
+          "document-manager-73275"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "document-manager-73275"
+  }
+}
