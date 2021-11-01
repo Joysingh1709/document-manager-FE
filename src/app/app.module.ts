@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     MatDividerModule,
     MatIconModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
