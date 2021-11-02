@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, public auth: AngularFireAuth, private firebaseService: FirebaseService) { }
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
@@ -21,15 +23,19 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
     if (!this.loginForm.valid) {
-      console.log("please check values")
+      console.log("please check values");
     }
     else {
-      console.log(this.loginForm.value)
+      this.firebaseService.loginWithEmailPass(this.loginForm.value).then(() => {
+        // after login do something        
+      });
     }
   }
 
-  onGoogleLogin(){
-    
+  onGoogleLogin() {
+    this.firebaseService.loginWithGoogle().then(() => {
+      // after login do something
+    });
   }
 
 }
