@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from './services/firebase.service';
-import { Auth, authState } from '@angular/fire/auth'
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-component',
   templateUrl: './app.component.html',
@@ -10,8 +11,7 @@ import { Auth, authState } from '@angular/fire/auth'
 export class AppComponent implements OnInit {
   title = 'documentManager';
 
-  constructor(private firebaseService: FirebaseService, private fAuth: Auth) {
-
+  constructor(private firebaseService: FirebaseService, public auth: AngularFireAuth, private router: Router) {
   }
 
   ngOnInit(): void { // lifecycle hook
@@ -19,12 +19,14 @@ export class AppComponent implements OnInit {
       // do something on user logged in or else logout
     });
 
-    authState(this.fAuth).subscribe((user) => {
+    this.auth.onAuthStateChanged((user) => {
       if (user) {
         console.log("user is logged in");
+        this.router.navigate(['home']);
       }
       else {
         console.log("user is logged out");
+        this.router.navigate(['login']);
       }
     })
   }
