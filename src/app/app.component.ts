@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from './services/firebase.service';
-import { Auth } from '@angular/fire/auth'
+import { Auth, authState } from '@angular/fire/auth'
 @Component({
   selector: 'app-component',
   templateUrl: './app.component.html',
@@ -10,9 +10,7 @@ import { Auth } from '@angular/fire/auth'
 export class AppComponent implements OnInit {
   title = 'documentManager';
 
-  fAuth: Auth | undefined;
-
-  constructor(private firebaseService: FirebaseService) {
+  constructor(private firebaseService: FirebaseService, private fAuth: Auth) {
 
   }
 
@@ -21,13 +19,13 @@ export class AppComponent implements OnInit {
       // do something on user logged in or else logout
     });
 
-    this.fAuth?.onAuthStateChanged((user) => {
+    authState(this.fAuth).subscribe((user) => {
       if (user) {
         console.log("user is logged in");
       }
       else {
         console.log("user is logged out");
       }
-    });
+    })
   }
 }
